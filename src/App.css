@@ -1,3 +1,8 @@
+:root {
+  --primary: #3f9c81;
+  --secondary: cyan;
+}
+
 .App {
   text-align: center;
 }
@@ -32,34 +37,70 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-:root {
-  --primary: #3f9c81;
-  --seconary: white;
+
+.dashboard {
+  background-color: var(--primary);
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: auto;
+  width: 60vw;
+}
+
+.dashboard-container>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Create outline */
+  border: 3px solid var(--secondary);
+  border-radius: 10px;
+}
+
+.dashboard-container h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dashboard-container img {
+  border-radius: 10px;
+  object-fit: contain;
+  width: 300px;
+  height: 250px;
 }
 
 .left-shifted-title {
   width: 44%;
   padding-left: 10%;
 }
+
 section#homepage-section {
   background: var(--primary);
   display: flex;
-  color: var(--seconary);
+  color: var(--secondary);
   justify-content: left;
   height: 100%;
   width: 100%;
   padding: 16% 0%;
 }
+
 .navbar {
   display: flex;
   justify-content: flex-start;
   padding: 1.5%;
 }
+
 .action-btn {
   margin-left: 3%;
   background: none;
@@ -73,10 +114,11 @@ section#homepage-section {
   background-color: var(--primary);
   color: var(--seconary);
 }
+
 .get-started-btn {
   background: none;
   padding: 1.5% 5%;
-  border: solid 2px var(--seconary);
+  border: solid 2px var(--secondary);
   border-radius: 33px;
   color: var(--seconary);
   cursor: pointer;
@@ -85,7 +127,9 @@ section#homepage-section {
 .get-started-btn:hover{
   background-color: var(--seconary);
   color: var(--primary);
+  color: var(--secondary);
 }
+
 .home-btn {
   text-decoration: none;
   color: var(--primary);
