@@ -88,7 +88,7 @@
 section#homepage-section {
   background: var(--primary);
   display: flex;
-  color: var(--secondary);
+  color: white;
   justify-content: left;
   height: 100%;
   width: 100%;
@@ -118,9 +118,9 @@ section#homepage-section {
 .get-started-btn {
   background: none;
   padding: 1.5% 5%;
-  border: solid 2px var(--secondary);
+  border: solid 2px white;
   border-radius: 33px;
-  color: var(--seconary);
+  color: white;
   cursor: pointer;
   transition-duration: 0.5s;
 }
