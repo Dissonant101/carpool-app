@@ -32,7 +32,41 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: auto;
+  width: 60vw;
+}
+
+.dashboard-container>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Create outline */
+  border: 3px solid #61dafb;
+  border-radius: 10px;
+}
+
+.dashboard-container h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dashboard-container img {
+  border-radius: 10px;
+  object-fit: contain;
+  width: 300px;
+  height: 250px;
+  background-color: blue;
 }
