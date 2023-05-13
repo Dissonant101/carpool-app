@@ -1,6 +1,6 @@
 :root {
   --primary: #3f9c81;
-  --seconary: white;
+  --secondary: cyan;
 }
 
 .App {
@@ -43,6 +43,11 @@
   }
 }
 
+
+.dashboard {
+  background-color: var(--primary);
+}
+
 .dashboard-container {
   display: flex;
   flex-direction: row;
@@ -59,7 +64,7 @@
   align-items: center;
 
   /* Create outline */
-  border: 3px solid #61dafb;
+  border: 3px solid var(--secondary);
   border-radius: 10px;
 }
 
@@ -73,7 +78,6 @@
   object-fit: contain;
   width: 300px;
   height: 250px;
-  background-color: blue;
 }
 
 .left-shifted-title {
@@ -84,7 +88,7 @@
 section#homepage-section {
   background: var(--primary);
   display: flex;
-  color: var(--seconary);
+  color: var(--secondary);
   justify-content: left;
   height: 100%;
   width: 100%;
@@ -108,9 +112,9 @@ section#homepage-section {
 .get-started-btn {
   background: none;
   padding: 1.5% 5%;
-  border: solid 2px var(--seconary);
+  border: solid 2px var(--secondary);
   border-radius: 33px;
-  color: var(--seconary);
+  color: var(--secondary);
 }
 
 .home-btn {

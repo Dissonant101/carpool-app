@@ -1,9 +1,10 @@
+
 const Dashboard = () => {
     return (
-        <div>
+        <div className="dashboard">
             <div className="dashboard-container">
                 <div>
-                    <img src="Drive.gif" alt="Drive" />
+                    <img src="Drive.png" alt="Drive" />
                     <h2>Drive</h2>
                 </div>
                 <div>
