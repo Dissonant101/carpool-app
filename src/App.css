@@ -153,3 +153,25 @@ section#footer-section {
   padding-bottom: 2%;
   color: var(--primary);
 }
+section#ride-request-page {
+  padding: 10%;
+}
+.info-form {
+  display: flex;
+  justify-content: space-around;
+}
+.info-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+input.input-field {
+  margin-left: 5%;
+  height: 40%;
+  margin-top: 8%;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+}
