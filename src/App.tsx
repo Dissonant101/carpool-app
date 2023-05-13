@@ -1,8 +1,11 @@
-import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Navbar, Home, LoginButton, LogoutButton, Map } from './components';
-import { MAP_PANE } from '@react-google-maps/api';
+import { Navbar, Home } from './components';
+import Footer from './components/Footer';
+import Dashboard from './components/Dashboard';
+import RideRequest from './components/RideRequest';
+import RideSearch from './components/RideSearch';
+
 
 const location = {
   address: '1600 Amphitheatre Parkway, Mountain View, california.',
@@ -10,15 +13,18 @@ const location = {
   lng: -122.08427,
 } 
 
+
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path='/ride-request' element={<RideRequest/>} />
+        <Route path='/ride-search' element={<RideSearch/>} />
       </Routes>
-      <LoginButton />
-      <LogoutButton />
+      <Footer />
     </Router>
   );
 }
