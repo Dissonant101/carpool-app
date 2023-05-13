@@ -197,3 +197,34 @@ input.input-field {
   justify-content: center;
   padding: 3%;
 }
+.centered-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.driver-containers {
+  display: flex;
+  justify-content: space-between;
+  margin: 3%;
+  padding: 1% 4%;
+  width: 55%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 17px;
+}
+.section_2 button {
+  margin-top: 38%;
+  background: none;
+  padding: 5.5% 10%;
+  border: solid 2px var(--primary);
+  border-radius: 33px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.section_2 {
+  width: 22%;
+}
+.left-shift {
+  padding: 1%;
+  padding-left: 3%;
+}
