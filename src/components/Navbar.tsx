@@ -1,4 +1,6 @@
 import { NavLink } from 'react-router-dom';
+import LoginButton from './LoginButton';
+import LogoutButton from './LogoutButton';
 
 /**
  * Navigation bar component.
@@ -7,14 +9,10 @@ const Navbar = () => {
   return (
     <div>
       <nav>
-        <div>
-          <ul>
-            <li>
-              <div>
-                <NavLink to="/">Home</NavLink>
-              </div>
-            </li>
-          </ul>
+        <div className='navbar'>
+          <NavLink to="/" className='home-btn'>Home</NavLink>
+          <LoginButton />
+          <LogoutButton />
         </div>
       </nav>
     </div>
