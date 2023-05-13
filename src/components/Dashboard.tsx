@@ -3,14 +3,14 @@ const Dashboard = () => {
     return (
         <div className="dashboard">
             <div className="dashboard-container">
-                <div>
+                <a href="">
                     <img src="Drive.png" alt="Drive" />
                     <h2>Drive</h2>
-                </div>
-                <div>
+                </a>
+                <a href="">
                     <img src="Ride.png" alt="Ride" />
                     <h2>Ride</h2>
-                </div>
+                </a>
             </div>
         </div>
     )
