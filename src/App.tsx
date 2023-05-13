@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Navbar, Home } from './components';
+import { Navbar, Home, LoginButton, LogoutButton } from './components';
 
 function App() {
   return (
@@ -10,6 +10,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
+      <LoginButton />
+      <LogoutButton />
     </Router>
   );
 }
