@@ -8,9 +8,11 @@ const Home = () => {
     <div className='left-shifted-title'>
       <h1>Welcome to Carpool!</h1>
       <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, natus suscipit necessitatibus cumque voluptate, eum eligendi quam tenetur.</h4>
- 
       <button onClick={() => loginWithRedirect()} className='get-started-btn'>Get Started</button>
+    </div>
 
+    <div className='hero-img'>
+      <img src='homepage_img.png'/>
     </div>
   </section>;
 };
