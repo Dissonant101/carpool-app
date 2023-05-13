@@ -114,6 +114,7 @@ section#homepage-section {
   display: flex;
   justify-content: flex-start;
   padding: 1.5%;
+  background-color: white;
 }
 
 .action-btn {
